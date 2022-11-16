@@ -18,7 +18,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/#/quick-note/",
   "display": "fullscreen",
   "theme_color": "#8b6cef",
   "background_color": "#ffffff"
