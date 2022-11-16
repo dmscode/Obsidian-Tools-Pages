@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/95.a8243e13.chunk.js","mappings":"0HAIA,UAJa,WACX,OAAO,gCACT,C","sources":["routes/Home.js"],"sourcesContent":["const Home = () => {\r\n  return <h1>Home</h1>\r\n};\r\n\r\nexport default Home;\r\n"],"names":[],"sourceRoot":""}
