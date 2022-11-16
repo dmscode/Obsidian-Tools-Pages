@@ -1,6 +1,6 @@
 {
   "name": "ob-pages",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
@@ -27,7 +27,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
+    "build": "yarn version --patch && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
