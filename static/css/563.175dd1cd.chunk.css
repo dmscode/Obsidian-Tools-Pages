@@ -1,2 +1,0 @@
-.quick-note{display:flex;flex-wrap:wrap;justify-items:center;margin:0 auto;max-width:800px;width:100%}.quick-note button,.quick-note input,.quick-note textarea{box-sizing:border-box;font-family:inherit;font-size:1rem;margin:10px 0}.quick-note input,.quick-note textarea{border:1px solid #99999a;padding:1rem;width:100%}#quick-note-content{height:calc(100vh - 30px - 3rem)}.quick-note button{font-size:1.4rem;text-align:center;width:50%}.quick-note .quick-note-desc{flex-shrink:0;width:100%}
-/*# sourceMappingURL=563.175dd1cd.chunk.css.map*/
