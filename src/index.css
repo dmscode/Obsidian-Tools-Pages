@@ -1,3 +1,15 @@
+:root {
+  --light-blue: #87c7fc;
+  --dark-blue: #32526d;
+  --blue: #007de3;
+  --coffee: #956d55;
+  --bg-gray: #EEEEEF;
+  --card-bg: #FFFFFF;
+  --card-radius: 18px;
+  --card-shadow: 0 1px 18px rgba(0, 0, 0, .03), 0 3px 32px rgba(0, 0, 0, .08);
+  --card-margin: 18px 9px;
+  --card-padding: 18px;
+}
 body {
   margin: 0;
   font-size: 18px;

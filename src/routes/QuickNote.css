@@ -1,10 +1,21 @@
+body {
+  background-color: var(--bg-gray);
+}
 .quick-note {
-  display: flex;
   flex-wrap: wrap;
   justify-items: center;
-  width: 100%;
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 1rem;
+}
+.quick-note .card {
+  display: flex;
+  flex-wrap: wrap;
+  margin: var(--card-margin);
+  padding: var(--card-padding);
+  border-radius: var(--card-radius);
+  background-color: var(--card-bg);
+  box-shadow: var(--card-shadow);
 }
 .quick-note input,
 .quick-note textarea,
@@ -12,23 +23,79 @@
   font-size: 1rem;
   font-family: inherit;
   box-sizing: border-box;
-  margin: 10px 0;
+  border: 0;
+  outline: none;
+  flex-grow: 1;
+  padding: 1rem;
 }
 .quick-note input,
-.quick-note textarea {
+.quick-note textarea,
+.quick-note label {
+  display: block;
   width: 100%;
-  padding: 1rem;
-  border: 1px solid #99999A;
 }
-#quick-note-content {
-  height: calc(100vh - 30px - 3rem);
+.quick-note label {
+  border-bottom: 2px solid rgba(128, 128, 128, .3);
 }
 .quick-note button {
-  width: 50%;
   text-align: center;
   font-size: 1.4rem;
 }
-.quick-note .quick-note-desc {
-  width: 100%;
+.quick-note .quick-note-input {
+  position: relative;
+}
+.quick-note .quick-note-input > button.clear-all {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  border-radius: var(--card-radius);
+  opacity: .3;
+  font-size: .8em;
+}
+.quick-note .quick-note-input > button.clear-all:hover {
+  opacity: .8;
+}
+.quick-note .card.button-group {
+  padding: 0;
+}
+.quick-note .card.button-group button:first-child {
+  border-top-left-radius: var(--card-radius);
+  border-bottom-left-radius: var(--card-radius);
+}
+.quick-note .card.button-group button:last-child {
+  border-top-right-radius: var(--card-radius);
+  border-bottom-right-radius: var(--card-radius);
+}
+.quick-note .card.button-group > .toggle {
+  color: white;
+  flex-grow: 0;
   flex-shrink: 0;
+  min-width: 2em;
+  background-color: var(--dark-blue);
+}
+.quick-note .card.button-group > .coffee {
+  color: white;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: var(--coffee);
+}
+.quick-note .card.button-group > .send {
+  color: white;
+  flex-grow: 10;
+  flex-shrink: 1;
+  background-color: var(--blue);
+}
+#quick-note-content {
+  height: calc(1rem * 1.6 * 18);
+}
+#quick-note-path {
+  height: calc(1rem * 1.6 * 5);
+}
+#quick-note-template {
+  height: calc(1rem * 1.6 * 8);
+}
+.quick-note .quick-note-desc {
+  display: block;
+  padding: var(--card-padding) 2em;
 }
